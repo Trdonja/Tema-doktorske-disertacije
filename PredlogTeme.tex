@@ -1,0 +1,283 @@
+%----------------------------------------------------------------------------------------------------
+% (c) 2017 Domen Močnik & Tomaž Vrtovec
+% Predlog teme doktorske disertacije
+% [verzija v slovenskem jeziku]
+%----------------------------------------------------------------------------------------------------
+
+
+%-------------------------
+% define document style: A4 paper size, two-sided printing, 11pt font, article style
+\documentclass[a4paper,twoside,11pt]{article}
+%-------------------------
+
+
+%-------------------------
+% use the follwing packages
+\usepackage[slovene]{babel}
+\usepackage[cp1250]{inputenc}
+\usepackage[pdftex]{graphicx}
+\usepackage{verbatim}
+\usepackage{eso-pic}
+\usepackage{color}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumitem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{dsfont}
+%-------------------------
+
+
+%-------------------------
+% spacing between lines
+%\renewcommand{\baselinestretch}{1.5}
+% side margin on odd pages
+\oddsidemargin 0.2in
+% side margin on even pages
+\evensidemargin -0.1in
+% for top margin of 1.0in
+\topmargin 0.0in
+% width  of text area (=  8.5in - 2*1.1in)
+\textwidth  6.3in
+% height of text area (= 11.0in - 2*1.0in)
+\textheight 9.0in
+% avoid extra space for header
+\headheight 0.7in \headsep 0.5in
+\voffset -1in
+% baseline-baseline distance between running footline and last line of text
+\footskip 1in
+% no extra vertical space is added to pages
+\raggedbottom
+
+% put "." behind section numbers
+\renewcommand \thesection{\arabic{section}.}
+\renewcommand \thesubsection{\arabic{section}.\arabic{subsection}.}
+
+% fancy headers and footers (package: fancyhdr)
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+%\renewcommand{\sectionmark}[1]{\markboth{\thesection\ #1}{}}
+\fancyhf{}
+\fancyfoot[CO,CE]{\thepage}
+%\fancyhead[LE,RO]{\slshape \leftmark}
+%\fancyhead[LE,RO]{\slshape Prijava teme doktorske disertacije}
+%\renewcommand{\headrulewidth}{0.4 pt}
+\renewcommand{\headrulewidth}{0.0 pt}
+\renewcommand{\footrulewidth}{0.0 pt}
+
+% bibliography (package: natbib)
+\usepackage[round,comma,sort&compress]{natbib}
+\setlength{\bibsep}{0.15cm} % set the bibliography line spacing
+
+% hyperlinks
+\usepackage[unicode=true,hyperfootnotes,hyperindex]{hyperref}
+\hypersetup {
+	colorlinks=false,
+	linkcolor=red,
+	pdftitle={Prijava teme doktorske disertacije},
+	pdfauthor={Domen Močnik},
+	pdfsubject={Slikovno vodena radioterapija glave in vratu},
+	pdfkeywords={}
+}
+
+% footnotes
+\usepackage{fnpos}
+%\usepackage{dblfnote}
+%\DFNcolumnsep 1.5\columnsep % set the distance between footnote columns
+\makeatletter % set space between text and footnote (1em = one line)
+\renewcommand\footnoterule{
+	\vspace{1.5em}
+	\kern-3\p@\hrule\@width.4\columnwidth
+	\kern2.6\p@}
+\makeatother
+
+% table of contents (package: tocloft)
+\usepackage{tocloft}
+\renewcommand{\cftsecleader}{\bfseries\cftdotfill{\cftsubsecdotsep}} % define that section title is followed by bold dots to the number
+\setlength{\cftaftertoctitleskip}{2.0cm} % space after toc title
+\setlength{\cftbeforesecskip}{1.0cm} % space between sections
+\setlength{\cftbeforesubsecskip}{0.5cm} % space between subsections
+%-------------------------
+
+
+%-------------------------
+% BEGIN DOCUMENT
+\begin{document}
+	%-------------------------
+	% TITLE PAGE
+	\thispagestyle{empty}
+	\par{ \noindent
+		\begin{center}
+			\includegraphics[width=5cm]{../images/fe_logo_SLO} \\ \vspace{2.0cm}
+			\textbf{\Large Prijava teme doktorske disertacije} \\ \vspace{2.0cm}
+			\textsc{\Huge Slikovno vodena} \\ \vspace{0.3cm}
+			\textsc{\Huge radioterapija} \\ \vspace{0.5cm}
+			\textsc{\Huge glave in vratu} \\ \vspace{0.5cm}
+			\textsc{\Huge še naslov} \\ \vspace{1.0cm}
+			\textsc{\Huge Image guided} \\ \vspace{0.5cm}
+			\textsc{\Huge radiotherapy} \\ \vspace{0.5cm}
+			\textsc{\Huge of head and neck} \\ \vspace{0.5cm}
+			\textsc{\Huge more title} \\ \vspace{2.2cm}
+			\textbf{\Large Domen Močnik} \\ \vspace{2.0cm}
+			\textbf{\large Ljubljana, 21. marec 2017 }
+		\end{center}
+	}
+	\newpage
+	% empty page after title page
+	\thispagestyle{empty}
+	~\\
+	\newpage
+	%-------------------------
+	
+	
+	%-------------------------
+	% TABLE OF CONTENTS
+	\thispagestyle{empty}
+	% change table of contents title
+	\renewcommand\contentsname{Vsebina}
+	\tableofcontents
+	% empty page after table of contents
+	\newpage
+	\thispagestyle{empty}
+	~\\
+	\newpage
+	%-------------------------
+	
+	
+	%-------------------------
+	% PREDLOG TEME DOKTORSKE DISERTACIJE
+	\section{Predlog teme doktorske disertacije}
+	%-------------------------
+	% OPIS OZJEGA ZNANSTVENEGA PODROCJA IN PROBLEMATIKE
+	\subsection{Opis ožjega znanstvenega področja in problematike}
+	%-------------------------
+	% UVOD
+	\subsubsection*{Uvod}
+	\par{}
+	%-------------------------
+	% NASLEDNJI RAZDELEK
+	\subsubsection*{}
+	\par{}
+	%-------------------------
+	% PRICAKOVANI IZVIRNI PRISPEVKI K ZNANOSTI
+	\subsection{Pričakovani izvirni prispevki k znanosti}
+	\par{\noindent
+		Pričakovani izvirni prispevki k znanosti v predlagani doktorski disertaciji so naslednji:
+		\begin{enumerate}
+			% 1. IZVIRNI PRISPEVEK
+			\item Vrednotenje in primerjava različnih algoritmov za poravnavo slik na bazi slik glave in vratu
+			% 2. IZVIRNI PRISPEVEK
+			\item Metoda za razgradnjo večmodalnih slik
+			% 3. IZVIRNI PRISPEVEK
+			\item Izmisli si še kaj.
+
+		\end{enumerate}
+	}
+	%-------------------------
+	% METODOLOGIJA
+	\subsection{Metodologija}
+	\par{\noindent
+		V skladu s predlaganimi pričakovanimi izvirnimi prispevki k znanosti je v nadaljevanju podana ustrezna metodologija:
+		\begin{enumerate}
+			% 1. IZVIRNI PRISPEVEK
+			\item En odstavek.
+			% 2. IZVIRNI PRISPEVEK
+			\item En odstavek.
+			% 3. IZVIRNI PRISPEVEK
+			\item En odstavek.
+			
+		\end{enumerate}
+	}
+	%-------------------------
+	\renewcommand{\bibsection}{\subsection{Izbrana literatura}}
+	\bibliographystyle{./stil_literature.bst} % select author-year bibliography style in Slovenian language
+	\bibliography{./literatura.tex}
+	\newpage
+	%-------------------------
+	% ŽIVLJENJEPIS
+	\newpage
+	\section{Življenjepis}
+	
+	% Osebni podatki
+	\subsection*{Osebni podatki}
+	\begin{itemize}[align=left, itemsep=-0.1cm, leftmargin=4.25cm, labelwidth=*]
+		\item[Ime in priimek:] Domen Močnik
+		\item[Datum in kraj rojstva:] 24.11.1986, Novo mesto
+		\item[Stalno bivališče:] Stopiče 73, 8322 Stopiče
+		\item[Državljanstvo:] slovensko
+	\end{itemize}
+	
+	% Kratek življenjepis
+	\subsection*{Kratek življenjepis}
+	\par{
+		Domen Močnik se je rodil 24. novembra 1986 v Novem mestu. Po opravljeni poklicni maturi na Ekonomski šoli Novo mesto se je leta 2005 vpisal na visokošolski študijski program Praktična matematika na Fakulteti za matematiko in fiziko, Univerza v Ljubljani, na katerem je leta 2010 diplomiral z zagovorom diplomske naloge \textit{Večplastni piezoelektrični nosilec}. Študij je na isti fakulteti nadaljeval z vpisom v 3. letnik prvostopenjskega univerzitetnega študija Matematika, po zaključku pa se je leta 2012 na isti fakulteti vpisal na II. bolonjsko stopnjo programa Matematika. Septembra 2015 je zaključil študij z zagovorom magistrske naloge \textit{Hamiltonov princip v mehaniki kontinuuma}. Septembra 2015 se je vpisal na doktorski študij elektrotehnike na Fakulteti za elektrotehniko, Univerza v Ljubljani, ter se zaposlil kot mladi raziskovalec v Laboratoriju za slikovne tehnologije, kjer trenutno raziskuje na področju avtomatske računalniško podprte obdelave in analize medicinskih slik.
+	}
+	
+	% Izobrazba
+	\subsection*{Izobrazba}
+	\begin{itemize}[align=left, itemsep=-0.1cm, leftmargin=1cm, labelwidth=*]
+		\item[2005] Opravil poklicno maturo na Ekonomski šoli Novo mesto \\ Naziv: ekonomski tehnik
+		\item[2010] Diplomiral na visokošolskem programu Praktična matematika na Fakulteti za matematiko in fiziko, Univerza v Ljubljani \\ Naziv: diplomirani inženir matematike
+		\item[2012] Diplomiral na univerzitetnem programu Matematika na Fakulteti za matematiko in fiziko, Univerza v Ljubljani \\ Naziv: diplomirani matematik
+		\item[2015] Magistriral na Fakulteti za matematiko in fiziko, Univerza v Ljubljani \\ Naziv: magister matematike
+		\item[2015] Vpis na doktorski študij na Fakulteti za elektrotehniko, Univerza v Ljubljani \\ študijska smer: elektrotehnika
+	\end{itemize}
+	
+	% Programi
+	\subsection*{Programi}
+	\begin{itemize}[align=left, itemsep=-0.1cm, leftmargin=2.5cm, labelwidth=*]
+		\item[2014~-~\textit{danes}] P2-0232: Funkcije in tehnologije kompleksnih sistemov (Fakulteta za elektrotehniko, Univerza v Ljubljani)
+	\end{itemize}
+	
+
+	%-------------------------
+	
+	
+	%-------------------------
+	% BIBLIOGRAFIJA
+	\newpage
+	\section{Bibliografija}
+	\par{\noindent
+		\textbf{Osebna bibliografija za obdobje 2010--2017\footnote{vir bibliografskih zapisov: vzajemna baza podatkov COBISS.SI/COBIB.SI (\href{http://www.cobiss.si}{http://www.cobiss.si}) z dne 25.5.2016}: \\}
+		\par{\noindent \textbf{Monografije in druga zaključena dela} \\}
+		\vspace{-0.3cm}
+		\par{\noindent \textbf{[2.11] Diplomsko delo}}
+		\begin{itemize}[align=right, itemsep=-0.05cm]
+			\item[1.] MOČNIK, Domen. Večplastni piezoelektrični nosilec : diplomska naloga. Ljubljana, 2010. [COBISS.SI-ID 15732057]
+			\item[2.] MOČNIK, Domen. Zgornja polravnina kot model za hiperbolično geometrijo : delo diplomskega seminarja. Ljubljana, 2012. [COBISS.SI-ID 16659289]
+		\end{itemize}
+		\par{\noindent \textbf{[2.9] Magistrsko delo}}
+		\begin{itemize}[align=right, itemsep=-0.05cm]
+			\item[3.] MOČNIK, Domen. Hamiltonov princip v mehaniki kontinuuma : magistrsko delo. Ljubljana, 2015. [COBISS.SI-ID 17443673]
+		\end{itemize}
+
+		%-------------------------
+		\newpage
+		\section{Izjava o sekundarnih podatkih}
+		\par{		
+		Prijavitelj teme doktorske disertacije Domen Močnik ter predvideni mentor doktorske disertacije izr.\ prof.\ dr.\ Tomaž Vrtovec izjavljava, da raziskave v povezavi z izdelavo doktorske disertacije z naslovom ``Slikovno vodena radioterapija glave in vratu'' temeljijo na sekundarnih podatkih in da so bili ti podatki v okviru raziskav anonimizirani.
+		}
+		\\\\\\
+		\noindent\makebox[3cm][l]{Datum: 21.3.2017}
+		\\\\\\
+		\noindent\makebox[3cm][l]{Prijavitelj teme:} \hfill\makebox[5cm][l]{Predvideni mentor:}
+		\\\\\\
+		\noindent\makebox[3cm][l]{Domen Močnik, mag.\ mat.} \hfill\makebox[5cm][l]{izr.\ prof.\ dr.\ Tomaž Vrtovec}\\
+		
+		%-------------------------
+		% DIPLOMA
+		\newpage
+		\section{Potrdilo o končanem izobraževanju}
+		\par{ \noindent
+			~\\
+			\begin{center}
+				\fbox{\includegraphics[angle=90,origin=c,width=14.25cm]{./fotokopija_diplome.pdf}}
+			\end{center}
+		}
+		%-------------------------
+		
+		%-------------------------
+		% END DOCUMENT
+	\end{document}
+	%-------------------------
+	
