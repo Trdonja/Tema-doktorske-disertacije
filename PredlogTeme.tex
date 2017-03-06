@@ -14,7 +14,8 @@
 %-------------------------
 % use the follwing packages
 \usepackage[slovene]{babel}
-\usepackage[cp1250]{inputenc}
+%\usepackage[cp1250]{inputenc}
+\usepackage[utf8]{inputenc}
 \usepackage[pdftex]{graphicx}
 \usepackage{verbatim}
 \usepackage{eso-pic}
@@ -108,9 +109,9 @@
 	\thispagestyle{empty}
 	\par{ \noindent
 		\begin{center}
-			\includegraphics[width=5cm]{../images/fe_logo_SLO} \\ \vspace{2.0cm}
+			\includegraphics[width=5cm]{./fe_logo_SLO} \\ \vspace{2.0cm}
 			\textbf{\Large Prijava teme doktorske disertacije} \\ \vspace{2.0cm}
-			\textsc{\Huge Slikovno vodena} \\ \vspace{0.3cm}
+			\textsc{\Huge Slikovno vodena} \\ \vspace{0.5cm}
 			\textsc{\Huge radioterapija} \\ \vspace{0.5cm}
 			\textsc{\Huge glave in vratu} \\ \vspace{0.5cm}
 			\textsc{\Huge še naslov} \\ \vspace{1.0cm}
@@ -153,7 +154,25 @@
 	%-------------------------
 	% UVOD
 	\subsubsection*{Uvod}
-	\par{}
+	\par{
+	  Radioterapija je poleg kirurških posegov in kemoterapije najbolj pomembna metoda zdravljenja raka. Uporablja se pri zdravljenju več kot polovice rakavih bolnikov bodisi kot samostojna metoda bodisi v kombinaciji s katero drugo metodo. Pred kirurškimi posegi se z radioterapijo poskuša zmanjšati velikost tumorjev, s čimer se posege prostorsko omeji, po kirurških posegih pa se z radioterapijo uničuje mikroskopske tumorske celice, ki še ostanejo po kirurških odstranitvah tumorjev. Kadar odstranitev tumorja ni mogoča, se radioterapija uporablja kot paliativno zdravljenje za lajšanje bolečin, pritiska in ostalih simptomov, s tem ko krči tumor. Zdravljenje raka z radioterapijo postaja z razvojem tehnologij vse bolj učinkovito in cenovno dostopno. Slaba stran radioterapije je ta, da se pri obsevanju tumorja nenamerno povzroča tudi poškodbe okoliškega zdravega tkiva, ki je pomembno za zdravo delovanje pacientovega organizma, zaradi česar se povzroča razne neželjene stranske učinke. Tovrstnim poškodbam se je v določeni meri mogoče izogniti z izboljšano natančnostjo dostavljanja sevalne doze, tako da jo čim bolj omejimo na območje tumorja. Izboljševanje natančnosti obsevanja tako predstavlja največji izziv pri izboljševanju zdravljenja z radioterapijo. K temu so v preteklih desetletjih precej pripomogle naprave za natančnejše oblikovanje sevalnih polj, računalniško podprto načrtovanje obsevanja ter slikovne tehnologije, ki omogočajo notranji vpogled v anatomijo pacienta ter lokalizacijo tumorja ter kritičnih okoliških struktur.
+	}
+	\subsubsection*{Delovanje radioterapije}
+	\par{
+	  Namen radioterapije je uničenje rakavih celic s pomočjo ionizirajočega sevanja. Izsevani električno nabiti delci (ioni) na poti skozi biološko tkivo sproščajo svojo energijo, zadosti sproščene enerigje pa neposredno ali pa posredno poškoduje genetski material celic (DNK), s čimer celice izgubijo zmožnost za nadaljnjo delitev in sčasoma odmrejo. Glede na način dostavljanja sevanja v celice se radioterapija deli na \emph{teleradioterapijo} ali \emph{zunanje obsevanje}, kjer se žarki sevanja oblikujejo zunaj človeškega telesa in se jih usmerja v telo bolnika, ter \emph{brahiterapijo} ali \emph{notranje obsevanje}, kjer se izvor sevanja, t.~j. radioaktivno snov, vsadi v notranost telesa. Glede na izvor se zunanja sevanja v grobem delijo v dve skupini. V prvo skupino spadajo elektromagnetna sevanja in sicer X-žarki ter $\gamma$-žarki. Ionizirajoči delci v tovrstnih žarkih so brezmasni fotoni, zato se tovrstno sevanje imenuje tudi fotonsko sevanje. Za proizvajanje X-žarkov se uporabljajo katodne cevi in linearni pospeševalniki, $\gamma$-žarki pa se proizvajajo pri razpadu radioaktivnih snovi. Fotonski žarki prenašajo nizko energijo in so razpršeni, zato se jih v sodobni radioterapiji nadomešča z drugo skupino sevanja, to so sevanja delcev (elektronov, protonov in nevtronov) ali težjih ionov (ogljik), ki so zaradi višje energije in manj razpršenih žarkov bolj učinkovita in natančna. Tovrstna sevanja se proizvajajo v sinhrotronih, ciklotronih in generatorjih nevtronov in so dražja. %\cite{baskar2012}
+	}
+	\par{
+	  Delci sevanja svojo energijo prenašajo na snov, skozi katero prehajajo. Doza sevanja je količina nakopičene izsevane energije v tkivu. Učinek uničevanja celic s sevanjem je večji, če je večja energija sevanja ter če je tkivo izpostavljeno sevanju dlje časa, odvisen pa je tudi od občutljivosti tkiva na sevanje. Pri obsevanju tumorja je neizogibno, da se del energije prenese tudi na zdrave celice v okolici tumorja in na poti do njega, zato so te celice prav tako prizadete. Cilj radioterapije je dostaviti čim večjo dozo sevanja v rakave celice in hkrati čim manjšo dozo v okoliško zdravo tkivo. Visoko energijski protoni ali težji ioni dosežejo svojo maksimalno energijsko izgubo na enoto dolžine tik pred koncem svojega dosega. V okolici tega maksimuma, ki se imenuje \emph{Braggov vrh}, se sprosti največ energije, njegovo lokacijo pa je mogoče prilagoditi glede na lokacijo tumorja, tako da se največ energije sprosti v rakave celice in čim manj v okoliško tkivo.
+	}
+	\subsubsection*{Intenzitetno modulirana radioterapija}
+	\par{
+	  
+	}
+	
+	  
+	  
+	  
+	
 	%-------------------------
 	% NASLEDNJI RAZDELEK
 	\subsubsection*{}
@@ -191,7 +210,7 @@
 	%-------------------------
 	\renewcommand{\bibsection}{\subsection{Izbrana literatura}}
 	\bibliographystyle{./stil_literature.bst} % select author-year bibliography style in Slovenian language
-	\bibliography{./literatura.tex}
+	%ODKOMENTIRAJ! \bibliography{./literatura.tex}
 	\newpage
 	%-------------------------
 	% ŽIVLJENJEPIS
@@ -226,7 +245,7 @@
 	% Programi
 	\subsection*{Programi}
 	\begin{itemize}[align=left, itemsep=-0.1cm, leftmargin=2.5cm, labelwidth=*]
-		\item[2014~-~\textit{danes}] P2-0232: Funkcije in tehnologije kompleksnih sistemov (Fakulteta za elektrotehniko, Univerza v Ljubljani)
+		\item[2015~-~\textit{danes}] P2-0232: Funkcije in tehnologije kompleksnih sistemov (Fakulteta za elektrotehniko, Univerza v Ljubljani)
 	\end{itemize}
 	
 
@@ -241,14 +260,14 @@
 		\textbf{Osebna bibliografija za obdobje 2010--2017\footnote{vir bibliografskih zapisov: vzajemna baza podatkov COBISS.SI/COBIB.SI (\href{http://www.cobiss.si}{http://www.cobiss.si}) z dne 25.5.2016}: \\}
 		\par{\noindent \textbf{Monografije in druga zaključena dela} \\}
 		\vspace{-0.3cm}
+		\par{\noindent \textbf{[2.9] Magistrsko delo}}
+		\begin{itemize}[align=right, itemsep=-0.05cm]
+			\item[3.] MOČNIK, Domen. Hamiltonov princip v mehaniki kontinuuma : magistrsko delo. Ljubljana, 2015. [COBISS.SI-ID 17443673]
+		\end{itemize}
 		\par{\noindent \textbf{[2.11] Diplomsko delo}}
 		\begin{itemize}[align=right, itemsep=-0.05cm]
 			\item[1.] MOČNIK, Domen. Večplastni piezoelektrični nosilec : diplomska naloga. Ljubljana, 2010. [COBISS.SI-ID 15732057]
 			\item[2.] MOČNIK, Domen. Zgornja polravnina kot model za hiperbolično geometrijo : delo diplomskega seminarja. Ljubljana, 2012. [COBISS.SI-ID 16659289]
-		\end{itemize}
-		\par{\noindent \textbf{[2.9] Magistrsko delo}}
-		\begin{itemize}[align=right, itemsep=-0.05cm]
-			\item[3.] MOČNIK, Domen. Hamiltonov princip v mehaniki kontinuuma : magistrsko delo. Ljubljana, 2015. [COBISS.SI-ID 17443673]
 		\end{itemize}
 
 		%-------------------------
@@ -271,7 +290,7 @@
 		\par{ \noindent
 			~\\
 			\begin{center}
-				\fbox{\includegraphics[angle=90,origin=c,width=14.25cm]{./fotokopija_diplome.pdf}}
+				\fbox{\includegraphics[angle=90,origin=c,width=14.25cm]{./fotokopija_magisterija}}
 			\end{center}
 		}
 		%-------------------------
