@@ -193,7 +193,7 @@
 	  Do sedaj je bilo opravljenih več študij, kjer se je preučevalo kakovost slikovne poravnave medicinskih slik za načrtovanje radioterapije glave in vratu z obzirom na nekatere prej omenjene kritične organe v tem predelu. Med temi raziskavami so \cite{webster2009,sohn2008,castadot2008,duboisdaische2007,brouwer2014,leibfarth2013,fortunati2014}, ki vrednotijo poravnave MR slik na CT slike, in pa \cite{hou2011,mencarelli2014,veiga2014}, ki vrednotijo poravnave načrtovalnih CT slik na medterapevtske CBCT slike. Kakovost poravnave se običajno meri s prekrivanostjo orisanih kritičnih organov (mera \emph{Dice}, \emph{Hausdorffova razdalja}) ali pa z razdaljami med označenimi oslonilnimi točkami v bližini kritičnih organov.
 	}
 	\par{
-	  Ročno orisovanje kritičnih organov je zamudno \cite{harari2010} in subjektivno opravilo (podvrženo osebni presoji opazovalca, zaradi česar prihaja do odstopanj med različnimi opazovalci \cite{brouwer2012}).  Zaradi potrebe po zmanjševanju ročnega dela in univerzalnem določevanju mej anatomskih struktur so se začeli razvijati in uporabljati postopki za avtomatsko orisovanje. Tak postopek, ki razčleni področje slike na paroma disjunktna podpodročja in kjer vsako od teh podpodročij smiselno določa neko anatomsko strukturo, se imenuje \emph{razgradnja} slike oz.~s tujko \emph{segmentacija}. Postopki za razgradnjo se v grobem delijo na take, ki ne uporabljajo predhodnega znanja (adaptivno upragovanje, rezanje grafov, metode za zaznavanje robov, razvodje) in take, ki uporabljajo predhodno znanje, kot je oblika in izgled orisovanih struktur. Metode s predhodnim znanjem lahko poravnajo atlas (t.j.~podobna, že razgrajena slika) na referenčno sliko, kjer potem preslikana območja atlasa določajo razgradnjo referenčne slike; lahko poravnajo statistične modele, ki že določajo grobo obliko in izgled strukture; lahko pa na bazi že razgrajenih slik s pomočjo metod iz strojnega učenja (metoda podpornih vektorjev, naključni gozdovi, nevronske mreže) ``naučijo'' klasifikatorje, to so preslikave, ki slikovnim elementom pripišejo pripadnost najverjetnejšemu območju razgradnje. Do sedaj so bile preučevane že številne metode za avtomatsko razgradnjo kritičnih organov, pomembnih pri načrtovanju radioterapije glave in vratu: \cite{han2008, commowick2008, voet2011, daisne2013, bondiau2005, isambert2008, sims2009, fritscher2014, teguh2011, fortunati2013, verhaart2014, wachinger2015, hoangduc2015, }.
+	  Ročno orisovanje kritičnih organov je zamudno \cite{harari2010} in subjektivno opravilo (podvrženo osebni presoji opazovalca, zaradi česar prihaja do odstopanj med različnimi opazovalci \cite{brouwer2012}).  Zaradi potrebe po zmanjševanju ročnega dela in univerzalnem določevanju mej anatomskih struktur so se začeli razvijati in uporabljati postopki za avtomatsko orisovanje. Tak postopek, ki razčleni področje slike na paroma disjunktna podpodročja in kjer vsako od teh podpodročij smiselno določa neko anatomsko strukturo, se imenuje \emph{razgradnja} slike oz.~s tujko \emph{segmentacija}. Postopki za razgradnjo se v grobem delijo na take, ki ne uporabljajo predhodnega znanja (adaptivno upragovanje, rezanje grafov, metode za zaznavanje robov, razvodje) in take, ki uporabljajo predhodno znanje, kot je oblika in izgled orisovanih struktur. Metode s predhodnim znanjem lahko poravnajo atlas (t.j.~podobna, že razgrajena slika) na referenčno sliko, kjer potem preslikana območja atlasa določajo razgradnjo referenčne slike; lahko poravnajo statistične modele, ki že določajo grobo obliko in izgled strukture; lahko pa na bazi že razgrajenih slik s pomočjo metod iz strojnega učenja (metoda podpornih vektorjev, naključni gozdovi, nevronske mreže) ``naučijo'' klasifikatorje, to so preslikave, ki slikovnim elementom pripišejo pripadnost najverjetnejšemu območju razgradnje. Do sedaj so bile preučevane že številne metode za avtomatsko razgradnjo kritičnih organov, pomembnih pri načrtovanju radioterapije glave in vratu: \cite{han2008, commowick2008, voet2011, daisne2013, bondiau2005, isambert2008, sims2009, fritscher2014, teguh2011, fortunati2013, verhaart2014, wachinger2015, hoangduc2015, fortunati2015, zhang2007, chen2010, teng2010, yang2014, qazi2011, commowick2008a, deeley2011, leavens2008, ibragimov2015, yan2004, dornheim2007, bekes2008, gorthi2009, faggiano2011, mattiucci2013, verhaart2014a, thariat2012, peroni2012, lamacchia2012, thomson2014, chen2012, tao2015, stapleford2010, ibragimov2017}. Kljub obsežnem delu na tem področju avtomatske metode še vedno ne ponujajo zadovoljivih rezultatov razgradnje kritičnih organov iz slik ob prisotnosti tumorjev in večjih patologij.
 	}
 	  
 	  
@@ -209,11 +209,9 @@
 		Pričakovani izvirni prispevki k znanosti v predlagani doktorski disertaciji so naslednji:
 		\begin{enumerate}
 			% 1. IZVIRNI PRISPEVEK
-			\item Vrednotenje in primerjava različnih algoritmov za poravnavo slik na bazi slik glave in vratu
+			\item Metoda za razgradnjo kritičnih organov iz CT in MR slike istega pacienta hkrati.
 			% 2. IZVIRNI PRISPEVEK
-			\item Metoda za razgradnjo večmodalnih slik
-			% 3. IZVIRNI PRISPEVEK
-			\item Izmisli si še kaj.
+			\item Vrednotenje in primerjava različnih algoritmov za poravnavo MR slik na CT slike.
 
 		\end{enumerate}
 	}
@@ -224,11 +222,10 @@
 		V skladu s predlaganimi pričakovanimi izvirnimi prispevki k znanosti je v nadaljevanju podana ustrezna metodologija:
 		\begin{enumerate}
 			% 1. IZVIRNI PRISPEVEK
-			\item En odstavek.
+			\item V doktorski disertaciji bomo predlagali metodo za avtomatično razgradnjo kritičnih organov iz CT in MR slik glave in vratu. Metoda bo nadgradnja metode \cite{ibragimov2017}, ki za razgradnjo uporablja le CT slike. Na bazi poravnanih CT in MR slik glave in vratu različnih pacientov z orisanimi kritičnimi organi bomo s konvolucijsko nevronsko mrežo učili klasifikator za razgradnjo kritičnih organov, tega pa bomo nato preizkusili na poravnanih in ročno orisanih slikah, ki ne bodo uporabljene za učenje klasifikatorja. Dobljene rezultate bomo primerjali z rezultati prej omenjene metode.
+			
 			% 2. IZVIRNI PRISPEVEK
-			\item En odstavek.
-			% 3. IZVIRNI PRISPEVEK
-			\item En odstavek.
+			\item V doktorski disertaciji bomo izvedli poravnave MR slik na CT slike področja glave in vratu, za kar bomo uporabili obstoječe implementacije algoritmov, kot so \cite{klein2010, modat2010, avants2008}. Za ročno orisane kritične organe bomo primerjali rezultate poravnav različnih algoritmov in ocenili primernost posameznega algoritma za klinično uporabo. Nadalje bomo raziskali možnost uporabe oslonilnih točk za pomoč pri poravnavi in dobljene rezultate primerjali z rezultati poravnav brez pomoči oslonilnih točk. Do sedaj še ni bilo opravljene primerjave več različnih algoritmov za poravnavo večmodalnih slik področja glave in vratu.	
 			
 		\end{enumerate}
 	}
